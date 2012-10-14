@@ -18,18 +18,17 @@ public class Utils {
             } catch (Exception e) {
             }
         }
+        if (impl == null) {
+            impl = new Utils10();
+        }
     }
 
     static public void makeSystemBarHidden(View view) {
-        if (impl != null) {
-            impl.makeSystemBarHidden(view);
-        }
+        impl.makeSystemBarHidden(view);
     }
 
     static public void makeHardwareAccel(View view) {
-        if (impl != null) {
-            impl.makeHardwareAccel(view);
-        }
+        impl.makeHardwareAccel(view);
     }
 
     public static float bound(float val, float min, float max) {
