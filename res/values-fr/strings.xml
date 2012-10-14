@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Bébé Touche</string>
+    <string name="title_activity_draw">Dessine</string>
+    <string name="title_activity_move">Déplace</string>
+    <string name="title_activity_main">Bébé Touche</string>
+    <string name="description">
+        Un petit jeux pour bébé à partir de 14 mois. Testé et approuvé par mon bébé.
+
+        C\'est deux jeux en un:
+        1) Quelques annimaux que le bébé peut bouger et qui font du bruit.
+        2) Une planche à dessin a plusieurs doigts en même temps et sensible à la pression.
+
+        Pour sortir du jeux, il faut appuyer 3 fois sur le bouton &quot;retour&quot;.
+
+        Je sais qu\'il y a déjà beaucoups de jeux comme celui-là dans le Google play store, mais ils ont tous des pubs ou sont payant.
+        Celui-là n\'a pas de pubs et est 100% gratuit.
+    </string>
+</resources>
