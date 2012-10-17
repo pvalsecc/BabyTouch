@@ -32,6 +32,7 @@ public class MoveActivity extends Activity {
 
         setContentView(mainView);
         // mainView.addOnLayoutChangeListener(this);
+        System.gc();
         createSprites();
         Utils.makeSystemBarHidden(mainView);
         Utils.makeHardwareAccel(mainView);
