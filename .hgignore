@@ -1,4 +1,4 @@
-bin
-gen
-out
-lib
+^bin/.*
+^gen/.*
+^out/.*
+^libs/.*
