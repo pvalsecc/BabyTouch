@@ -4,17 +4,5 @@
     <string name="title_activity_draw">Draw</string>
     <string name="title_activity_move">Move</string>
     <string name="title_activity_main">Baby Touch</string>
-    <string name="description">
-        A toy game for babies starting from 14 months. Tested and approved by my baby.
-
-        It\'s in fact two games:
-        1) A set of animals the baby can move around and that makes noises.
-        2) A drawing board with multi touch support and pressure sensitive.
-
-        For getting out of the game, press 3 times on the &quot;back&quot; button from the main screen.
-
-        I know that there are multiple apps like that in the Google play store, but they all have adverts or you have to pay for them.
-        This one has no advertisement and is 100% free.
-    </string>
 
 </resources>
