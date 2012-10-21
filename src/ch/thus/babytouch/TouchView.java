@@ -35,10 +35,6 @@ public class TouchView extends View {
     private final Paint paint;
     private final Rect mRect;
     private float maxWidth;
-    private static final float minTouchSize = 0.1f;
-    private static final float maxTouchSize = 0.5f;
-    private static final float minTouchPressure = 0.18f;
-    private static final float maxTouchPressure = 0.45f;
     private static final int BgColor = Color.BLACK;
     private boolean cleared;
 
@@ -101,20 +97,14 @@ public class TouchView extends View {
         public PointInfo(float x, float y, float size, float pressure) {
             this.x = x;
             this.y = y;
-            float adjustedSize;
-            if (size > 0) {
-                adjustedSize = (size - minTouchSize) / (maxTouchSize - minTouchSize);
-            } else if (pressure > 0) {
-                adjustedSize = (pressure - minTouchPressure) / (maxTouchPressure - minTouchPressure);
-            } else {
-                adjustedSize = 0.5f;
-            }
+            float adjustedSize=tpg.getAdjusted(size, pressure);
             this.size = Math.max(Math.min(adjustedSize * maxWidth, maxWidth), 1.0f);
         }
     }
 
     private ArrayList<PointInfo> prevPoints = new ArrayList<PointInfo>();
     private ColorSelector colorSelector;
+	private TouchPressureGuesser tpg;
 
     public void doPoint(int ptrId, float x, float y, float size, float pressure) {
         PointInfo newPoint = new PointInfo(x, y, size, pressure);
@@ -193,4 +183,8 @@ public class TouchView extends View {
     public boolean isCleared() {
         return cleared;
     }
+
+	public void setTouchPressureGuesser(TouchPressureGuesser tpg) {
+		this.tpg=tpg;
+	}
 }

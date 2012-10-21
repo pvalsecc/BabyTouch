@@ -47,7 +47,6 @@ public class MoveActivity extends Activity {
         mainView.addView(background, bgLP);
 
         setContentView(mainView);
-        // mainView.addOnLayoutChangeListener(this);
         System.gc();
         createSprites();
         Utils.makeSystemBarHidden(mainView);

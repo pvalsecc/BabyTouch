@@ -27,6 +27,8 @@ public class DrawActivity extends Activity {
     /** The view responsible for the touch painting. */
     private TouchView mView;
 
+    private TouchPressureGuesser tpg;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,8 @@ public class DrawActivity extends Activity {
         setContentView(R.layout.activity_draw);
 
         mView = (TouchView) findViewById(R.id.touch_view);
+        tpg=new TouchPressureGuesser(getPreferences(Activity.MODE_PRIVATE));
+        mView.setTouchPressureGuesser(tpg);
         mView.setDensityDpi(dm.densityDpi);
 
         ColorSelector colorSelector = (ColorSelector) findViewById(R.id.color_selector_view);
@@ -48,6 +52,12 @@ public class DrawActivity extends Activity {
         Utils.makeHardwareAccel(mainView);
     }
 
+    @Override
+    protected void onDestroy() {
+    	tpg.save(getPreferences(Activity.MODE_PRIVATE));
+    	super.onDestroy();
+    }
+    
     @Override
     public void onBackPressed() {
         if (mView.isCleared()) {
