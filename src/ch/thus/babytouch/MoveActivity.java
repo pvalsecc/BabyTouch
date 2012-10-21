@@ -27,8 +27,9 @@ public class MoveActivity extends Activity {
 
     private RelativeLayout mainView;
     private static final int RESOURCES[][] = { { R.drawable.cat, R.raw.cat }, { R.drawable.dog, R.raw.dog },
-            { R.drawable.cow, R.raw.cow }, { R.drawable.elephant, R.raw.elephant }, { R.drawable.elk, R.raw.elk },
-            { R.drawable.goat, R.raw.goat }, { R.drawable.owl, R.raw.owl }, { R.drawable.sheep, R.raw.sheep }, };
+            { R.drawable.duck, R.raw.duck }, { R.drawable.cow, R.raw.cow }, { R.drawable.elephant, R.raw.elephant },
+            { R.drawable.elk, R.raw.elk }, { R.drawable.goat, R.raw.goat }, { R.drawable.owl, R.raw.owl },
+            { R.drawable.sheep, R.raw.sheep }};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
