@@ -40,7 +40,7 @@ public class DrawActivity extends Activity {
         mView = (TouchView) findViewById(R.id.touch_view);
         mView.setDensityDpi(dm.densityDpi);
 
-        ColorSelector2 colorSelector = (ColorSelector2) findViewById(R.id.color_selector_view);
+        ColorSelector colorSelector = (ColorSelector) findViewById(R.id.color_selector_view);
         mView.setColorSelector(colorSelector);
 
         View mainView = findViewById(R.id.draw_view);

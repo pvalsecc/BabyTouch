@@ -16,6 +16,7 @@
  */
 package ch.thus.babytouch;
 
+import ch.thus.babytouch.R;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -30,16 +31,17 @@ import android.view.View;
 
 public class ColorSelector extends View {
     private final Paint paint;
-    private int curColor;
+    private float curColor[];
     private boolean random;
     private RectF rect;
     private Bitmap dieBitmap;
     private float initialTouchX = 0;
+    private float initialTouchY = 0;
 
     public ColorSelector(Context c, AttributeSet attrs) {
         super(c, attrs);
         paint = new Paint();
-        curColor = Color.RED;
+        curColor = new float[] { 0.0f, 1.0f, 0.0f };
         random = true;
         shakeIt();
         rect = new RectF();
@@ -60,7 +62,7 @@ public class ColorSelector extends View {
 
         // cur color
         final float curColMargin = w * 1.0f / 10.0f;
-        paint.setColor(curColor);
+        paint.setColor(getCurColor());
         paint.setStyle(Style.FILL);
         rect.set(curColMargin, curColMargin, w - curColMargin, w - curColMargin);
         canvas.drawRoundRect(rect, curColMargin, curColMargin, paint);
@@ -92,19 +94,25 @@ public class ColorSelector extends View {
 
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             initialTouchX = x;
+            initialTouchY = y;
         }
 
-        if (topGradient <= y && y <= bottomGradient) {
-            float hsv[] = { 0.0f, 1.0f, 1.0f };
-            hsv[0] = (y - topGradient) / (bottomGradient - topGradient) * 360.0f;
-            hsv[1] = 1.0f - Math.min(Math.max((x - initialTouchX) / (w * 3), 0.0f), 1.0f);
-            curColor = Color.HSVToColor(255, hsv);
+        if (topGradient <= initialTouchY && initialTouchY <= bottomGradient) {
+            if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                curColor[0] = (y - topGradient) / (bottomGradient - topGradient) * 360.0f;
+            }
+            curColor[1] = 1.0f - Utils.bound((x - initialTouchX) / (w * 3), 0.0f, 1.0f);
+            curColor[2] = 1.0f - Utils.bound((y - initialTouchY) / (w * 3), 0.0f, 1.0f);
             random = false;
             redrawCurColor();
             redrawRandom();
-            return true;
-        } else if (y > bottomGradient) {
+
             if (event.getAction() == MotionEvent.ACTION_UP) {
+                initialTouchX = initialTouchY = 0.0f;
+            }
+            return true;
+        } else if (initialTouchY > bottomGradient) {
+            if (event.getAction() == MotionEvent.ACTION_UP && y > bottomGradient) {
                 random = !random;
                 shakeIt();
                 redrawRandom();
@@ -116,14 +124,14 @@ public class ColorSelector extends View {
     }
 
     public int getCurColor() {
-        return curColor;
+        return Color.HSVToColor(255, curColor);
     }
 
     public void shakeIt() {
         if (random) {
-            float hsv[] = { 0.0f, 1.0f, 1.0f };
-            hsv[0] = ((float) Math.random()) * 360.0f;
-            curColor = Color.HSVToColor(255, hsv);
+            curColor[0] = ((float) Math.random()) * 360.0f;
+            curColor[1] = 1.0f;
+            curColor[2] = 1.0f;
             redrawCurColor();
         }
     }

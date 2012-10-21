@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
-    <ch.thus.babytouch.ColorSelector2
+    <ch.thus.babytouch.ColorSelector
         android:id="@+id/color_selector_view"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

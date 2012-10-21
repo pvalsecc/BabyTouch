@@ -114,7 +114,7 @@ public class TouchView extends View {
     }
 
     private ArrayList<PointInfo> prevPoints = new ArrayList<PointInfo>();
-    private ColorSelector2 colorSelector;
+    private ColorSelector colorSelector;
 
     public void doPoint(int ptrId, float x, float y, float size, float pressure) {
         PointInfo newPoint = new PointInfo(x, y, size, pressure);
@@ -186,7 +186,7 @@ public class TouchView extends View {
         invalidate(mRect);
     }
 
-    public void setColorSelector(ColorSelector2 value) {
+    public void setColorSelector(ColorSelector value) {
         colorSelector = value;
     }
 
