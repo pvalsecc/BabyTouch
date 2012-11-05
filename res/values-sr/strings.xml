@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Bebo dodirni ekran</string>
+    <string name="title_activity_draw">Crtaj</string>
+    <string name="title_activity_move">Pomeri</string>
+    <string name="title_activity_main">Bebo dodirni ekran</string>
+    <string name="description">Ova igrica je namenjena za bebe starije od 14 meseci. Testirana je i overena od strane moje bebe.
+Sadrzi dve igrice.
+1) Prva igrica sadrzi zivotinje koje beba moze da pomera i time pravi zvuke.
+2) Druga je tabla za crtanje sa  vise butona i sensitivna je na pritisak.
+
+Da se izadje iz igrice treba pritisnuti 3 puta na "back" buton na glavnom ekranu.
+
+Ova igrica je napravljena za tablet, ali odlicno radi i na telefonu.
+
+Mnoge slicne aplikacije postoje na Google play radnji, ali sve one imaju reklame ili nisu besplatne.
+Ova Igrica nema reklame i potpuno je besplatna.</string>
+
+</resources>

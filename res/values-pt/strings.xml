@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">Baby Touch</string>
+    <string name="title_activity_draw">Desenhar</string>
+    <string name="title_activity_move">Mover</string>
+    <string name="title_activity_main">Baby Touch</string>
+
+</resources>
