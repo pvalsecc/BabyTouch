@@ -108,7 +108,13 @@ public class TouchView extends View {
 
     public void doPoint(int ptrId, float x, float y, float size, float pressure) {
         PointInfo newPoint = new PointInfo(x, y, size, pressure);
-        drawLine(prevPoints.get(ptrId), newPoint);
+        PointInfo prevPoint = prevPoints.get(ptrId);
+        if(prevPoint==null) {
+            //some platforms can get a MOVE without DOWN first...
+            prevPoints.set(ptrId, newPoint);
+            prevPoint=newPoint;
+        }
+        drawLine(prevPoint, newPoint);
         prevPoints.set(ptrId, newPoint);
         cleared = false;
     }
