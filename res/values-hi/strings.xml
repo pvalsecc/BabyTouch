@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">स्पर्श</string>
+    <string name="title_activity_draw">ड्रा</string>
+    <string name="title_activity_move">हिलाना</string>
+    <string name="title_activity_main">स्पर्श</string>
+
+</resources>
