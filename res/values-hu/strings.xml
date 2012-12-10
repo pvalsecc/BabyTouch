@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Baby Touch</string>
+    <string name="title_activity_draw">Rajzolás</string>
+    <string name="title_activity_move">Mozgatás</string>
+    <string name="title_activity_main">Baby Touch</string>
+</resources>

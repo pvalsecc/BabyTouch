@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Baby Touch</string>
+    <string name="title_activity_draw">Desen</string>
+    <string name="title_activity_move">Deplasează</string>
+    <string name="title_activity_main">Baby Touch</string>
+<!-- Description:
+Un joc pentru copii începând de la 14 luni. Testat și aprobat de către copilul meu.
+Conține de fapt două jocuri:
+1) Un set de animale pe care copilul le poate deplasa și care fac zgomote.
+2) Un tablou de desenat cu suport multi-touch și sensibilitate la presiune.
+
+Pentru a ieși din joc, apăsați de 3 ori pe butonul "Înapoi" din ecranul principal.
+Acest joc este făcut pentru tablete, dar funcționează de asemenea foarte bine pe telefoane.
+
+Știu că există multe aplicații similare în magazinul Google Play, dar toate au reclame sau se plătesc.
+Acest joc nu are nici o reclama și este 100% gratuit.
+ -->
+</resources>
