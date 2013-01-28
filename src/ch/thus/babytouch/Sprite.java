@@ -20,6 +20,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -61,12 +62,16 @@ public class Sprite extends ImageView {
         if (now >= lastPlayTime + 200) {
             lastPlayTime = now;
             MediaPlayer mp = MediaPlayer.create(getContext(), soundRes);
-            mp.setOnCompletionListener(new OnCompletionListener() {
-                public void onCompletion(MediaPlayer mp) {
-                    mp.release();
-                }
-            });
-            mp.start();
+            if (mp != null) {
+                mp.setOnCompletionListener(new OnCompletionListener() {
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.release();
+                    }
+                });
+                mp.start();
+            } else {
+                Log.e("Sprite", "Cannot create MediaPlayer");
+            }
         }
     }
 }
