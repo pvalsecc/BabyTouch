@@ -16,18 +16,14 @@
  */
 package ch.thus.babytouch;
 
-import java.util.ArrayList;
-
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Rect;
+import android.graphics.*;
 import android.graphics.Paint.Cap;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
+
+import java.util.ArrayList;
 
 public class TouchView extends View {
     private Bitmap mBitmap;
@@ -108,6 +104,9 @@ public class TouchView extends View {
 
     public void doPoint(int ptrId, float x, float y, float size, float pressure) {
         PointInfo newPoint = new PointInfo(x, y, size, pressure);
+        while (prevPoints.size() <= ptrId) {
+            prevPoints.add(null);
+        }
         PointInfo prevPoint = prevPoints.get(ptrId);
         if(prevPoint==null) {
             //some platforms can get a MOVE without DOWN first...

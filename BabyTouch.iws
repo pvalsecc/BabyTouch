@@ -3,16 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="226c12fb-85eb-410e-9b1b-4b7ad93d7d95" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BabyTouch.iml" afterPath="$PROJECT_DIR$/BabyTouch.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BabyTouch.ipr" afterPath="$PROJECT_DIR$/BabyTouch.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BabyTouch.iws" afterPath="$PROJECT_DIR$/BabyTouch.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/thus/babytouch/Sprite.java" afterPath="$PROJECT_DIR$/src/ch/thus/babytouch/Sprite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/thus/babytouch/TouchView.java" afterPath="$PROJECT_DIR$/src/ch/thus/babytouch/TouchView.java" />
     </list>
     <ignored path="BabyTouch.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Sprite.java" changelist="226c12fb-85eb-410e-9b1b-4b7ad93d7d95" time="1359365211566" ignored="false" />
-    <file path="/fragment.java" changelist="226c12fb-85eb-410e-9b1b-4b7ad93d7d95" time="1359365316089" ignored="false" />
+    <file path="/fragment.java" changelist="226c12fb-85eb-410e-9b1b-4b7ad93d7d95" time="1366703279365" ignored="false" />
+    <file path="/TouchView.java" changelist="226c12fb-85eb-410e-9b1b-4b7ad93d7d95" time="1366703209990" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +73,10 @@
       <file leaf-file-name="TouchView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/TouchView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="3" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="115" column="38" selection-start="3619" selection-end="3619" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3015#3026#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,10 +93,17 @@
       <file leaf-file-name="Sprite.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/Sprite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="40" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#2930#0" expanded="true" />
-              </folding>
+            <state line="63" column="44" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MediaPlayer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/soft/android-sdk-linux/sources/android-17/android/media/MediaPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="834" column="47" selection-start="40001" selection-end="40001" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,7 +111,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.20512821">
+            <state line="3" column="28" selection-start="157" selection-end="157" vertical-scroll-proportion="0.07692308">
               <folding />
             </state>
           </provider>
@@ -125,6 +133,7 @@
       <list>
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/ch/thus/babytouch/Sprite.java" />
+        <option value="$PROJECT_DIR$/src/ch/thus/babytouch/TouchView.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
@@ -161,6 +170,20 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BabyTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BabyTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,18 +202,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="BabyTouch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BabyTouch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="babytouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -200,7 +227,7 @@
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="ExportedApkPath" value="$USER_HOME$/BabyTouch0.5.apk" />
+    <property name="ExportedApkPath" value="$USER_HOME$/BabyTouch0.6.apk" />
     <property name="options.lastSelected" value="com.advancedtools.cpp.CppSupportSettings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
@@ -374,8 +401,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1600" y="0" width="1680" height="1054" extended-state="7" />
-    <editor active="false" />
+    <frame x="1600" y="0" width="1680" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -460,23 +487,83 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="44" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/soft/android-sdk-linux/sources/android-17/android/media/MediaPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="814" column="30" selection-start="39134" selection-end="39157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/TouchView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="3" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3015#3026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="12" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/Sprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="44" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/soft/android-sdk-linux/sources/android-17/android/media/MediaPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="814" column="30" selection-start="39134" selection-end="39157" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/TouchView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="3" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3015#3026#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="43" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/TouchView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="3" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -488,25 +575,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/soft/android-sdk-linux/sources/android-17/android/media/MediaPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/Sprite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="821" column="30" selection-start="39448" selection-end="39448" vertical-scroll-proportion="0.33295584">
+        <state line="63" column="44" selection-start="2513" selection-end="2513" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/Sprite.java">
+    <entry file="file://$USER_HOME$/soft/android-sdk-linux/sources/android-17/android/media/MediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="40" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.0">
+        <state line="834" column="47" selection-start="40001" selection-end="40001" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/thus/babytouch/TouchView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="38" selection-start="3619" selection-end="3619" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#2930#0" expanded="true" />
+            <element signature="e#3015#3026#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.20512821">
+        <state line="3" column="28" selection-start="157" selection-end="157" vertical-scroll-proportion="0.07692308">
           <folding />
         </state>
       </provider>
